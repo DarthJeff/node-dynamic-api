@@ -1,19 +1,20 @@
 {
-	"name": "node-dynamic-api",
-	"version": "0.0.1",
-	"description": "NodeJS module - creates API based on config.json file",
-	"main": "router.js",
-	"directories": {
-		"test": "test"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/DarthJeff/node-dynamic-api.git"
-	},
-	"author": "Jeff Brannon",
-	"license": "MIT",
-	"dependencies": {
-	},
-	"devDependencies": {
-	}
+  "name": "node-dynamic-api",
+  "version": "0.0.1",
+  "description": "NodeJS module - creates API based on config.json file",
+  "main": "router.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DarthJeff/node-dynamic-api.git"
+  },
+  "author": "Jeff Brannon",
+  "license": "MIT",
+  "dependencies": {
+    "websocket-stream": "^3.3.0",
+    "ws": "^1.1.1"
+  },
+  "devDependencies": {}
 }

@@ -68,8 +68,6 @@ var _httpDynamicDispatcher = (function(urlHelper, requestHelper) {
 			// get dynamic strategy
 			// process request
 
-
-
 			if(requestMethod == 'post') {
 				var body = '';
 				request.on('data', function(data) {
@@ -83,8 +81,12 @@ var _httpDynamicDispatcher = (function(urlHelper, requestHelper) {
 					response.end('Hello Jeff - POST');
 				});
 			} else {
-				request.params = requestHelper.query;
-				response.end('Hello Jeff - GET');
+				//request.params = requestHelper.query;
+				//response.end('Hello Jeff - GET');
+
+				var httpResponse = require('../http-response');
+				httpResponse.htmlRender(response, './views/index.html');
+				//httpResponse.htmlRender(response, './views/error.html');
 			}
 		}
 	};
